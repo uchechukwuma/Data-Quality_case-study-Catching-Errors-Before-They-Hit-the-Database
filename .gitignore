@@ -1,6 +1,6 @@
 # Environment
 .env
-.venv
+.venv/
 venv/
 env/
 
@@ -19,12 +19,8 @@ __pycache__/
 *.swo
 
 # Data files
-*.xlsx
-*.csv
-*.json
+# Keep raw data, ignore processed/generated files
+data/processed/
 
 # Jupyter
 .ipynb_checkpoints/
-
-# processec data set
-data/processed/
