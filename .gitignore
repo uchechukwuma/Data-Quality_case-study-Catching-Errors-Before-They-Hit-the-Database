@@ -25,3 +25,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# processec data set
+data/processed/

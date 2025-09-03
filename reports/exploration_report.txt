@@ -1,0 +1,16 @@
+
+ ** Exploration Stage Data Quality Report:
+Timestamp: 2025-09-03 19:52:57.118514
+Total Rows: 372
+Missing in 'timevalue': 0
+Missing in 'providerkey': 0
+Missing in 'companynameofficial': 2
+Missing in 'fiscalperiodend': 0
+Missing in 'operationstatustype': 0
+Missing in 'ipostatustype': 0
+Missing in 'geonameen': 0
+Missing in 'industrycode': 0
+Missing in 'REVENUE': 91
+Missing in 'unit_REVENUE': 78
+Total Missing Cells: 171
+Total Cells: 3720
