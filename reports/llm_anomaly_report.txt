@@ -1,0 +1,23 @@
+LLM Anomaly Detection Report
+Generated: 2025-09-05 20:40:30.227362
+==================================================
+
+** Missing Value Standardization:
+ - Missing values standardized to 'N/A': 1441
+
+
+Company: JAMES HALSTEAD PLC
+Verdict: implausible
+Confidence: 0.85
+Explanation: The company's 80% revenue rebound in 2023 is a significant outlier compared to peer performance in the same sector and region, suggesting a potential data extraction error.
+------------------------------
+Company: CAFFYNS PUBLIC LIMITED COMPANY
+Verdict: implausible
+Confidence: 0.85
+Explanation: The company's 80% revenue rebound in 2023 is a significant outlier compared to peer performance in the same sector and region, suggesting a potential data extraction error.
+------------------------------
+Company: TWENTYFIRST CENTURY MANAGEMENT SERVICES LIMITED
+Verdict: implausible
+Confidence: 0.85
+Explanation: The company's 80% revenue rebound in 2023 is a significant outlier compared to peer performance in the same sector and region, suggesting a potential data extraction error.
+------------------------------

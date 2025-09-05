@@ -24,3 +24,8 @@ data/processed/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Other Application Settings
+config/config.yaml
+__pycache__/
+*.pyc
