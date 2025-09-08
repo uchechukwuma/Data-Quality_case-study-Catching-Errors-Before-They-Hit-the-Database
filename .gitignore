@@ -27,8 +27,6 @@ data/processed/
 
 # Jupyter
 .ipynb_checkpoints/
-<<<<<<< main
-=======
 
 # Other Application Settings
 config/config.yaml
@@ -42,4 +40,4 @@ __pycache__/
 *.wmv
 *.mkv
 *.flv
->>>>>>> local
+
