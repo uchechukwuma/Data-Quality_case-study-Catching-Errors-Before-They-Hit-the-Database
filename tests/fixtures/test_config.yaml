@@ -1,0 +1,6 @@
+# tests/fixtures/test_config.yaml
+model: 'gpt-3.5-turbo-test'
+max_tokens: 150
+temperature: 0.1
+top_n_companies: 2
+volatility_threshold: 0.3

@@ -24,3 +24,19 @@ data/processed/
 
 # Jupyter
 .ipynb_checkpoints/
+<<<<<<< main
+=======
+
+# Other Application Settings
+config/config.yaml
+__pycache__/
+*.pyc
+
+# Ignore video files
+*.mp4
+*.mov
+*.avi
+*.wmv
+*.mkv
+*.flv
+>>>>>>> local

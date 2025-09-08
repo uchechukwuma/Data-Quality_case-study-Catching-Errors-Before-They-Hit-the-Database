@@ -1,0 +1,4 @@
+timevalue,providerkey,companynameofficial,fiscalperiodend,operationstatustype,ipostatustype,geonameen,industrycode,REVENUE,unit_REVENUE
+2023,TEST1,Test Company 1,31-Mar,ACTIVE,PUBLIC,United Kingdom,7010,1000000,GBP
+2022,TEST2,Test Company 2,2022-12-31,ACTIVE,PRIVATE,India,6201,2000000,INR
+2021,TEST3,Test Company 3,30-Jun,INACTIVE,PUBLIC,United States,4510,,USD
