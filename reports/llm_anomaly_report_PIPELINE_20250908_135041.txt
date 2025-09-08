@@ -1,0 +1,92 @@
+LLM Anomaly Detection Report
+Generated: 2025-09-08 13:50:49.867314
+==================================================
+
+** Missing Value Standardization:
+ - Missing values standardized to 'N/A': 1272
+
+** LLM Analysis Results:
+Company: JAMES HALSTEAD PLC_2019
+Verdict: implausible
+Confidence: 0.95
+Explanation: The company's revenue trend of 0 is significantly lower than the median revenue of its peers and falls outside the 25th-75th percentile range, indicating a potential anomaly.
+----------------------------------------
+
+Company: JAMES HALSTEAD PLC_2020
+Verdict: implausible
+Confidence: 0.95
+Explanation: The reported revenue of +inf% is not plausible given the peer context, as it exceeds the 75th percentile revenue range by a significant margin.
+----------------------------------------
+
+Company: JAMES HALSTEAD PLC_2021
+Verdict: plausible
+Confidence: 0.7
+Explanation: The company's revenue growth is within the expected range of its peers, and the second reported revenue is significantly higher than the first, indicating a possible recovery from a previous loss.
+----------------------------------------
+
+Company: JAMES HALSTEAD PLC_2022
+Verdict: implausible
+Confidence: 0.95
+Explanation: The company's revenue trend shows a significant drop to zero, which is highly unusual compared to its peers, and the previous year's growth rate of 12% is also not consistent with the industry median.
+----------------------------------------
+
+Company: JAMES HALSTEAD PLC_2023
+Verdict: implausible
+Confidence: 0.95
+Explanation: The company's revenue trend shows a 100% drop followed by an infinite percentage increase, which is highly unusual and unlikely in a real-world scenario.
+----------------------------------------
+
+Company: CAFFYNS PUBLIC LIMITED COMPANY_2019
+Verdict: uncertain
+Confidence: 0.5
+Explanation: Insufficient peer context data to make a determination.
+----------------------------------------
+
+Company: CAFFYNS PUBLIC LIMITED COMPANY_2020
+Verdict: uncertain
+Confidence: 0.5
+Explanation: Insufficient peer context data to make a definitive judgment on the plausibility of CAFFYNS PUBLIC LIMITED COMPANY's revenue trend.
+----------------------------------------
+
+Company: CAFFYNS PUBLIC LIMITED COMPANY_2021
+Verdict: uncertain
+Confidence: 0.5
+Explanation: Insufficient peer context data to make a definitive judgment on the plausibility of CAFFYNS PUBLIC LIMITED COMPANY's revenue trend.
+----------------------------------------
+
+Company: CAFFYNS PUBLIC LIMITED COMPANY_2022
+Verdict: uncertain
+Confidence: 0.5
+Explanation: Insufficient peer context data to make a definitive judgment on the company's revenue trend.
+----------------------------------------
+
+Company: CAFFYNS PUBLIC LIMITED COMPANY_2023
+Verdict: uncertain
+Confidence: 0.5
+Explanation: Insufficient peer context data to make a definitive judgment on the company's revenue trend.
+----------------------------------------
+
+Company: TWENTYFIRST CENTURY MANAGEMENT SERVICES LIMITED_2020
+Verdict: implausible
+Confidence: 0.95
+Explanation: The reported revenue of 73,258,000 is significantly lower than the median revenue of 1,470,630,000 among peers, indicating a potential anomaly.
+----------------------------------------
+
+Company: TWENTYFIRST CENTURY MANAGEMENT SERVICES LIMITED_2021
+Verdict: implausible
+Confidence: 0.85
+Explanation: The company's revenue trend is significantly lower than the peer median and range, indicating a potential anomaly.
+----------------------------------------
+
+Company: TWENTYFIRST CENTURY MANAGEMENT SERVICES LIMITED_2022
+Verdict: implausible
+Confidence: 0.95
+Explanation: The company's revenue trend shows a significant drop of 236% in the third quarter, which is highly unusual compared to the peer context where the median revenue is stable and within a narrow range.
+----------------------------------------
+
+Company: TWENTYFIRST CENTURY MANAGEMENT SERVICES LIMITED_2023
+Verdict: implausible
+Confidence: 0.95
+Explanation: The company's revenue trend shows significant fluctuations, with a 36% increase followed by a 236% decrease and then a 359% decrease, which is highly unusual compared to the stable and high median revenue of its peers.
+----------------------------------------
+
