@@ -1,73 +1,91 @@
 # Data Quality Case Study
 
-**Goal:** Detect and flag data quality issues in company financial data extracted from multiple sources, producing a clean Excel output and a concise PowerPoint summary.
+**Goal:** Automate detection and flagging of data quality issues in company financial datasets extracted from multiple sources, producing **Excel reports** and a concise **PowerPoint summary**.
 
 ---
 
 ## 🧭 Project Overview
-This project implements **automated data quality checks** for company financials, including:  
+This project implements a **data quality assurance pipeline** for financial data. It combines **rule-based checks** with **LLM-powered contextual analysis** to highlight anomalies and prioritize review.  
 
-- **Completeness:** Check for missing required fields  
-- **Correctness:** Validate numeric fields, currency units  
-- **Consistency:** Identify unusual year-over-year revenue spikes  
-- **Uniqueness:** Detect duplicate records per provider & year  
-- **LLM Plausibility:** Use GPT-based prompts to flag suspicious values  
+Key quality measures implemented:
+- **Completeness** – Check for missing required fields  
+- **Correctness** – Validate numeric fields and fiscal period formats  
+- **Consistency** – Identify unusual year-over-year revenue spikes  
+- **Uniqueness** – Detect duplicate records per provider & year  
+- **LLM Plausibility** – Use Groq API (primary), fallback Gemini API, and mock fallback to flag suspicious values  
 
-The pipeline outputs a flagged Excel file and calculates a **risk score** for prioritization.
+The pipeline outputs:
+- A **flagged Excel file** with risk scores  
+- A **PowerPoint summary deck**  
+- Console logs showing LLM fallback decisions  
 
 ---
 
 ## 📁 Project Structure
 ```text
-├── config
+├── config/                  # Config files & settings
 ├── data/
-│ ├── raw/ # Input Excel files
-│ └── processed/ # Output flagged files (gitignored)
-├── src/ # Python scripts for checks & LLM
-├── notebooks/ # Exploratory analysis
-├── tests/ # Unit tests
-├── presentation/ # PowerPoint deck
+│   ├── raw/                 # Input Excel files
+│   └── processed/           # Output flagged files (gitignored)
+├── src/                     # Production-grade Python scripts
+│   ├── analysis.py          # Peer/LLM analysis
+│   ├── data_preparation.py  # Cleaning & transformations
+│   ├── llm_utils.py         # LLM API calls & parsing
+│   └── reporting.py         # Excel outputs
+├── notebooks/               # Exploratory Jupyter notebooks (3 stages)
+├── tests/                   # Unit tests (pytest)
+├── presentation/            # PowerPoint deliverable
+├── reports/                 # Automated report output
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
+
 ## 🚀 Quickstart
-### 1. Clone the repo
-```bash
+1. Clone the repo
 git clone https://github.com/YOUR_USERNAME/data-quality-casestudy.git
 cd data-quality-casestudy
-```
-### 2. Install dependencies
-```bash
+2. Create environment & install dependencies
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-```
+3. Run the pipeline
+python src/main.py
 
-### 3. Run data quality checks
-python src/data_quality_checks.py
-Output: data/processed/flagged_output.xlsx with flags and risk scores.
-(Screenshot to be added after first run)
+Output:
+data/processed/flagged_output.xlsx → Flagged dataset with risk scores
+presentation/data_quality_summary.pptx → Auto-generated PowerPoint
 
-#### 4. Optional LLM check
-Set your OPENAI_API_KEY in .env to enable GPT plausibility checks.
-The script falls back to rule-based heuristics if no key is provided.
+## ⚙️ LLM Integration
+Primary: Groq API
 
-#### 5. 📊 Results
-Flagged rows include: missing fields, duplicate entries, revenue spikes, and implausible values detected by GPT.
-Each row is assigned a risk score to prioritize review.
-Insert a small screenshot of the flagged Excel table here.
+Fallback 1: Gemini API
 
-#### 6. 🧪 Testing
-Run unit tests:
+Fallback 2: Mock responses (ensures output is always generated)
+
+Only the top 3 most volatile companies are analyzed with LLM for efficient resource management.
+
+## 🧪 Testing
+Run all unit tests:
+
 pytest
+Over 25+ tests cover rule-based checks, LLM utilities, reporting, and full integration.
 
-#### 7. 🎯 Next Steps / Future Improvements
-Peer/industry comparison for more robust anomaly detection
-Active learning loop with analyst feedback for LLM improvements
-Production orchestration using Airflow or dbt (optional)
+## 📊 Results
+Automated detection of missing values, duplicates, and revenue anomalies
+
+AI-assisted peer/contextual analysis for plausibility checks
+
+Unified Excel + PowerPoint reporting for decision-making
 
 
-## 🧑‍💻 Author
-Uchechukwu Obi  
-[LinkedIn Profile](www.linkedin.com/in/uchechukwu-obi)
+## 🎯 Next Steps
+Add peer/industry benchmarks to strengthen anomaly detection
+
+Build an active learning loop with analyst feedback for LLM refinement
+
+Orchestrate with Airflow/dbt for scalable production deployment
+
+## 🧑‍💻 Author Uchechukwu Obi 
+[www.linkedin.com/in/uchechukwu-obi]
+
