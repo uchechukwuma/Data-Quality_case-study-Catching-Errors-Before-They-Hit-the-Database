@@ -4,6 +4,9 @@
 venv/
 env/
 
+# Ignore presentation files
+presentation/*.pptx
+
 # Python
 __pycache__/
 *.py[cod]
